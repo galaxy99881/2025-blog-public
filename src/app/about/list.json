@@ -1,5 +1,5 @@
 {
-	"title": "关于本站",
-	"description": "一个基于 Github 的现代化博客系统",
-	"content": "📦网站基于 Github 仓库完全存储，所有内容版本可控\n\n🚀无后端，无 serverless function，纯静态站点\n\n✏️文章通过可视化 UI 直接编辑并提交到 Github 仓库\n\n🔑所有用户都可以编辑，提交需要 Owner 的 Private Key\n\n## 技术栈\n\n- Next.js\n- React\n- TypeScript\n- Tailwind CSS\n- Motion\n- Github API"
+	"title": "关于我",
+	"description": "Zhixin Li · 李志新",
+	"content": "我是浙江大学超声医学专业博士研究生，也是一名医师研究者，工作聚焦于临床医学、医学影像与人工智能的交叉领域。我的研究从具体临床问题出发，重视可复现的方法、可解释的模型，以及经得起同行审查的证据。\n\n## 研究方向\n\n- **超声人工智能**：甲状腺、乳腺、超声造影与三维重建\n- **医学影像人工智能**：筛查、预测与临床导向的模型验证\n- **多模态学习**：融合影像、临床变量和结构化医学知识\n- **多中心研究**：数据异质性、隐私保护学习与可复现性\n- **可解释人工智能**：理解模型证据，而不只报告性能\n\n## 教育经历\n\n**浙江大学** · 超声医学博士研究生，2025–至今\n\n**青岛大学** · 临床医学 5+3 一体化，硕士阶段主修儿科学，2017–2025\n\n硕士阶段主要研究儿科心血管影像 AI，尤其是基于胸片的先天性心脏病筛查与风险预测；博士阶段进一步转向超声、多模态建模与多中心临床数据研究。\n\n## 代表论文\n\n1. **Zhixin Li**, et al. CHD-CXR: a de-identified publicly available dataset of chest x-ray for congenital heart disease. *Frontiers in Cardiovascular Medicine*, 2024.\n2. **Zhixin Li**, et al. Explanatory deep learning to predict elevated pulmonary artery pressure in children with ventricular septal defects using standard chest x-rays. *Frontiers in Cardiovascular Medicine*, 2024.\n3. **Zhixin Li**, et al. The development and validation of an artificial intelligence-based screening method for atrial septal defect in children's chest x-rays. *Frontiers in Pediatrics*, 2023.\n\n## 研究原则\n\n> 方法要真实、可复现、经得起同行审查。\n\n从具体临床问题出发，保留原始证据，如实说明不确定性；面对矛盾追查根因，不做超出数据证据边界的结论。\n\n## 联系方式\n\n- 学术邮箱：[lizhixin@zju.edu.cn](mailto:lizhixin@zju.edu.cn)\n- GitHub：[@galaxy99881](https://github.com/galaxy99881)\n- 所在地：中国浙江杭州"
 }

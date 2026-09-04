@@ -1,66 +1,37 @@
 {
 	"meta": {
-		"title": "YYsuni",
-		"description": "YYsuni 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
-		"username": "Suni"
+		"title": "Zhixin Li | 李志新",
+		"description": "李志新的个人网站：浙江大学超声医学博士研究生，关注医学影像人工智能、超声 AI、多模态学习与可解释人工智能。",
+		"username": "Zhixin"
 	},
 	"theme": {
-		"colorBrand": "#2fcbe7",
-		"colorPrimary": "#5B423F",
-		"colorSecondary": "#8b7667",
-		"colorBrandSecondary": "#eec25e",
-		"colorBg": "#d4e8f3",
+		"colorBrand": "#2563eb",
+		"colorPrimary": "#172033",
+		"colorSecondary": "#64748b",
+		"colorBrandSecondary": "#0ea5e9",
+		"colorBg": "#eaf2fb",
 		"colorBorder": "#ffffff",
-		"colorCard": "#ffffff99",
-		"colorArticle": "#ffffffcc"
+		"colorCard": "#ffffffb8",
+		"colorArticle": "#ffffffdd"
 	},
-	"backgroundColors": [
-		"#f7da3987",
-		"#8fdbe9",
-		"#fffef8"
-	],
-	"artImages": [
-		{
-			"id": "cat",
-			"url": "/images/art/cat.png"
-		},
-		{
-			"id": "a46372ff45bc5524",
-			"url": "/images/art/a46372ff45bc5524.jpg"
-		},
-		{
-			"id": "1c7b726fe720679b",
-			"url": "/images/art/1c7b726fe720679b.jpg"
-		}
-	],
-	"currentArtImageId": "1c7b726fe720679b",
-	"backgroundImages": [
-		{
-			"id": "",
-			"url": ""
-		}
-	],
+	"backgroundColors": ["#dbeafe", "#bae6fd", "#f8fafc"],
+	"artImages": [],
+	"currentArtImageId": "",
+	"backgroundImages": [{ "id": "", "url": "" }],
 	"currentBackgroundImageId": "",
 	"socialButtons": [
 		{
 			"id": "github",
 			"type": "github",
-			"value": "https://github.com/yysuni",
-			"label": "Github",
-			"order": 3
-		},
-		{
-			"id": "juejin",
-			"type": "juejin",
-			"value": "https://juejin.cn/user/2427311675422382",
-			"label": "稀土掘金",
+			"value": "https://github.com/galaxy99881",
+			"label": "GitHub",
 			"order": 2
 		},
 		{
 			"id": "email",
 			"type": "email",
-			"value": "yysuni1001@gmail.com",
-			"label": "",
+			"value": "lizhixin@zju.edu.cn",
+			"label": "学术邮箱",
 			"order": 1
 		}
 	],
@@ -69,11 +40,8 @@
 	"isCachePem": false,
 	"hideEditButton": false,
 	"enableCategories": true,
-	"currentHatIndex": 3,
+	"currentHatIndex": 0,
 	"hatFlipped": false,
 	"enableChristmas": false,
-	"beian": {
-		"text": "",
-		"link": ""
-	}
+	"beian": { "text": "", "link": "" }
 }
