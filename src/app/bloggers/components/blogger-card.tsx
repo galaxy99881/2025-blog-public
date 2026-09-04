@@ -8,6 +8,7 @@ import EditableStarRating from '@/components/editable-star-rating'
 import { Blogger, type BloggerStatus } from '../grid-view'
 import { useState } from 'react'
 import AvatarUploadDialog, { type AvatarItem } from './avatar-upload-dialog'
+import { withBasePath } from '@/lib/base-path'
 
 interface BloggerCardProps {
 	blogger: Blogger
@@ -79,7 +80,7 @@ export function BloggerCard({ blogger, isEditMode = false, onUpdate, onDelete }:
 				<div className='mb-4 flex items-center gap-4'>
 					<div className='group relative'>
 						<img
-							src={localBlogger.avatar}
+							src={withBasePath(localBlogger.avatar)}
 							alt={localBlogger.name}
 							className={cn('h-16 w-16 rounded-full object-cover', canEdit && 'cursor-pointer')}
 							onClick={() => canEdit && setShowAvatarDialog(true)}

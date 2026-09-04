@@ -6,6 +6,7 @@ import { CARD_SPACING } from '@/consts'
 import dayjs from 'dayjs'
 import Link from 'next/link'
 import { HomeDraggableLayer } from './home-draggable-layer'
+import { withBasePath } from '@/lib/base-path'
 
 export default function ArticleCard() {
 	const center = useCenterStore()
@@ -41,7 +42,7 @@ export default function ArticleCard() {
 				) : blog ? (
 					<Link href={`/blog/${blog.slug}`} className='flex transition-opacity hover:opacity-80'>
 						{blog.cover ? (
-							<img src={blog.cover} alt='cover' className='mr-3 h-12 w-12 shrink-0 rounded-xl border object-cover' />
+							<img src={withBasePath(blog.cover)} alt='cover' className='mr-3 h-12 w-12 shrink-0 rounded-xl border object-cover' />
 						) : (
 							<div className='text-secondary mr-3 grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/60'>+</div>
 						)}

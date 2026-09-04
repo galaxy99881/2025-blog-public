@@ -5,6 +5,7 @@ import { useConfigStore } from './stores/config-store'
 import { useCenterStore } from '@/hooks/use-center'
 import { useSize } from '@/hooks/use-size'
 import { HomeDraggableLayer } from './home-draggable-layer'
+import { withBasePath } from '@/lib/base-path'
 
 export default function HatCard() {
 	const center = useCenterStore()
@@ -44,7 +45,7 @@ export default function HatCard() {
 						index === 0 ? (
 							<img
 								key={index}
-								src={`/images/hats/${hatIndex}.webp`}
+								src={withBasePath(`/images/hats/${hatIndex}.webp`)}
 								alt='hat'
 								className='h-full w-full object-contain'
 								style={{ width: styles.width, height: styles.height, transform: hatFlipped ? 'scaleX(-1)' : 'none' }}
@@ -52,7 +53,7 @@ export default function HatCard() {
 						) : (
 							<img
 								key={index}
-								src={`/images/hats/${hatIndex}.webp`}
+								src={withBasePath(`/images/hats/${hatIndex}.webp`)}
 								alt='hat'
 								className='absolute h-full w-full object-contain'
 								style={{ width: styles.width, height: styles.height, transform: hatFlipped ? 'scaleX(-1)' : 'none', bottom: index * 16 }}

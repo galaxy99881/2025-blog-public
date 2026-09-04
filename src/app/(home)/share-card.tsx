@@ -8,6 +8,7 @@ import { CARD_SPACING } from '@/consts'
 import shareList from '@/app/share/list.json'
 import Link from 'next/link'
 import { HomeDraggableLayer } from './home-draggable-layer'
+import { withBasePath } from '@/lib/base-path'
 
 type ShareItem = {
 	name: string
@@ -57,7 +58,7 @@ export default function ShareCard() {
 				<Link href='/share' className='mt-2 block space-y-2'>
 					<div className='flex items-center'>
 						<div className='relative mr-3 h-12 w-12 shrink-0 overflow-hidden rounded-xl'>
-							<img src={randomItem.logo} alt={randomItem.name} className='h-full w-full object-contain' />
+							<img src={withBasePath(randomItem.logo)} alt={randomItem.name} className='h-full w-full object-contain' />
 						</div>
 						<h3 className='text-sm font-medium'>{randomItem.name}</h3>
 					</div>

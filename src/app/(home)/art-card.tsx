@@ -4,6 +4,7 @@ import { useConfigStore } from './stores/config-store'
 import { CARD_SPACING } from '@/consts'
 import { useRouter } from 'next/navigation'
 import { HomeDraggableLayer } from './home-draggable-layer'
+import { withBasePath } from '@/lib/base-path'
 
 export default function ArtCard() {
 	const center = useCenterStore()
@@ -18,7 +19,7 @@ export default function ArtCard() {
 	const artImages = siteContent.artImages ?? []
 	const currentId = siteContent.currentArtImageId
 	const currentArt = (currentId ? artImages.find(item => item.id === currentId) : undefined) ?? artImages[0]
-	const artUrl = currentArt?.url || '/images/art/cat.png'
+	const artUrl = withBasePath(currentArt?.url || '/images/art/cat.png')
 
 	return (
 		<HomeDraggableLayer cardKey='artCard' x={x} y={y} width={styles.width} height={styles.height}>
@@ -26,7 +27,7 @@ export default function ArtCard() {
 				{siteContent.enableChristmas && (
 					<>
 						<img
-							src='/images/christmas/snow-3.webp'
+							src={withBasePath('/images/christmas/snow-3.webp')}
 							alt='Christmas decoration'
 							className='pointer-events-none absolute'
 							style={{ width: 160, right: -8, top: -16, opacity: 0.9 }}
